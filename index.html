@@ -34,11 +34,11 @@
         .hero-inner { display: flex; align-items: center; justify-content: space-between; gap: 60px; }
         .hero-text { flex: 1; max-width: 760px; }
         
-        /* [수정됨] 컨테이너 240x240 원복 및 object-fit: contain 적용 */
-        .hero-image-wrapper { width: 240px; height: 240px; flex-shrink: 0; border-radius: 32px; overflow: hidden; background-color: var(--highlight-bg); border: 1px solid var(--border-color); display: flex; align-items: center; justify-content: center; color: #aaa; font-size: 14px; box-shadow: 0 8px 24px rgba(0,0,0,0.04); }
+        .hero-image-wrapper { width: 240px; height: 240px; flex-shrink: 0; border-radius: 32px; overflow: hidden; background-color: #ffffff; border: 1px solid var(--border-color); display: flex; align-items: center; justify-content: center; color: #aaa; font-size: 14px; box-shadow: 0 8px 24px rgba(0,0,0,0.04); }
         .hero-image-wrapper img { width: 100%; height: 100%; object-fit: contain; display: block; }
 
-        .hero h1 { font-size: 48px; font-weight: 800; letter-spacing: -0.04em; line-height: 1.3; margin-bottom: 24px; }
+        .hero h1 { font-size: 38px; font-weight: 800; letter-spacing: -0.04em; line-height: 1.3; margin-bottom: 24px; word-break: keep-all; }
+        
         .profile-info { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-bottom: 40px; background: #ffffff; padding: 24px; border: 1px solid var(--border-color); border-radius: 12px; }
         .info-item { font-size: 15px; }
         .info-label { font-weight: 700; color: var(--text-muted); margin-right: 8px; display: inline-block; width: 60px; }
@@ -46,7 +46,8 @@
         .skills-container { display: flex; gap: 12px; flex-wrap: wrap; }
         .skill-chip { padding: 8px 16px; border: 1px solid var(--border-color); border-radius: 100px; font-size: 14px; font-weight: 600; }
 
-        .section-title { font-size: 32px; font-weight: 700; margin-bottom: 40px; padding-top: 80px; letter-spacing: -0.03em; border-bottom: 2px solid var(--text-main); padding-bottom: 16px; }
+        /* [수정됨] 섹션 타이틀 32px -> 28px */
+        .section-title { font-size: 28px; font-weight: 700; margin-bottom: 40px; padding-top: 80px; letter-spacing: -0.03em; border-bottom: 2px solid var(--text-main); padding-bottom: 16px; word-break: keep-all; }
 
         .experience-list { margin-bottom: 80px; }
         .exp-item { display: flex; gap: 32px; padding: 32px 0; border-bottom: 1px solid var(--border-color); align-items: flex-start; }
@@ -54,8 +55,10 @@
         .exp-logo { width: 64px; height: 64px; border-radius: 12px; background-color: #ffffff; border: 1px solid var(--border-color); display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0; font-size: 12px; color: #aaa; text-align: center; }
         .exp-logo img { width: 100%; height: 100%; object-fit: contain; padding: 8px; }
         .exp-details { flex: 1; }
-        .exp-details h3 { font-size: 20px; margin-bottom: 6px; }
-        .exp-details h4 { font-size: 16px; color: var(--text-muted); margin-bottom: 16px; font-weight: 500; }
+        /* [수정됨] 경력 제목 20px -> 18px */
+        .exp-details h3 { font-size: 18px; margin-bottom: 6px; word-break: keep-all; }
+        /* [수정됨] 경력 서브제목 16px -> 15px */
+        .exp-details h4 { font-size: 15px; color: var(--text-muted); margin-bottom: 16px; font-weight: 500; }
         .exp-details p { font-size: 15px; color: var(--text-main); white-space: pre-line; }
 
         .project-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 120px; }
@@ -66,7 +69,8 @@
         .project-content { display: flex; flex-direction: column; flex-grow: 1; padding: 24px; }
         .project-meta { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
         .project-company { font-size: 13px; font-weight: 700; color: var(--text-muted); }
-        .project-title { font-size: 20px; font-weight: 700; margin-bottom: 12px; line-height: 1.4; }
+        /* [수정됨] 카드 제목 20px -> 18px */
+        .project-title { font-size: 18px; font-weight: 700; margin-bottom: 12px; line-height: 1.4; word-break: keep-all; }
         .project-result { margin-top: auto; background: var(--highlight-bg); padding: 16px; border-radius: 12px; }
         .result-label { font-size: 12px; font-weight: 700; margin-bottom: 4px; }
         .result-value { font-size: 14px; font-weight: 500; }
@@ -80,7 +84,8 @@
         
         .modal-title-row { display: flex; justify-content: space-between; align-items: flex-end; gap: 16px; flex-wrap: wrap; }
         .modal-company { font-size: 15px; font-weight: 700; color: var(--text-muted); margin-bottom: 8px; }
-        .modal-title { font-size: 32px; font-weight: 800; line-height: 1.3; }
+        /* [수정됨] 모달 제목 32px -> 26px */
+        .modal-title { font-size: 26px; font-weight: 800; line-height: 1.3; word-break: keep-all; }
         
         .outlink-btn { display: inline-flex; align-items: center; justify-content: center; gap: 6px; padding: 10px 20px; background-color: var(--text-main); color: #ffffff; text-decoration: none; border-radius: 8px; font-size: 14px; font-weight: 700; flex-shrink: 0; transition: background-color 0.2s; }
         .outlink-btn:hover { background-color: var(--text-muted); }
@@ -90,15 +95,17 @@
         .modal-value { font-size: 16px; font-weight: 600; color: var(--text-main); }
         
         .modal-section { margin-bottom: 32px; }
-        .modal-section h4 { font-size: 18px; margin-bottom: 12px; font-weight: 700; border-left: 4px solid var(--accent-color); padding-left: 12px; }
+        /* [수정됨] 모달 내부 섹션 제목 18px -> 16px */
+        .modal-section h4 { font-size: 16px; margin-bottom: 12px; font-weight: 700; border-left: 4px solid var(--accent-color); padding-left: 12px; word-break: keep-all; }
         .modal-section p { color: var(--text-main); line-height: 1.7; white-space: pre-line; }
 
         .modal-deliverables { display: grid; grid-template-columns: 1fr; gap: 32px; margin-top: 16px; }
         .modal-deliverables img { width: 100%; max-height: 600px; border-radius: 12px; border: 1px solid var(--border-color); background-color: var(--highlight-bg); object-fit: contain; }
         .deliverable-placeholder { width: 100%; height: 400px; background-color: var(--highlight-bg); border: 1px solid var(--border-color); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: #aaa; font-size: 16px; font-weight: 600; text-align: center; word-break: keep-all; padding: 20px; }
 
+        /* [수정됨] 푸터 텍스트 36px -> 28px */
         footer { position: relative; background: var(--text-main); color: #ffffff; padding: 100px 5%; text-align: center; }
-        footer h2 { font-size: 36px; margin-bottom: 24px; }
+        footer h2 { font-size: 28px; margin-bottom: 24px; word-break: keep-all; }
         .footer-contact { margin-top: 40px; display: flex; flex-direction: column; align-items: center; gap: 12px; }
         .footer-contact p { font-size: 20px; font-weight: 600; margin: 0; color: #ffffff; }
 
@@ -118,14 +125,15 @@
             .hero-inner { flex-direction: column-reverse; align-items: center; text-align: center; gap: 32px; }
             .hero-text { text-align: center; }
             
-            /* [수정됨] 모바일 해상도에서 크기 160x160 원복 */
-            .hero-image-wrapper { width: 160px; height: 160px; border-radius: 24px; }
+            .hero-image-wrapper { width: 160px; height: 160px; border-radius: 24px; background-color: #ffffff; }
             
-            .hero h1 { font-size: 32px; margin-bottom: 20px; }
+            .hero h1 { font-size: 28px; margin-bottom: 20px; }
+            
             .profile-info { grid-template-columns: 1fr; padding: 20px; text-align: left; }
             .skills-container { justify-content: center; }
 
-            .section-title { font-size: 26px; padding-top: 60px; margin-bottom: 32px; }
+            /* [수정됨] 모바일 섹션 타이틀 26px -> 22px */
+            .section-title { font-size: 22px; padding-top: 60px; margin-bottom: 32px; }
             .exp-item { flex-direction: column; gap: 16px; padding: 24px 0; }
             .exp-date { min-width: auto; padding-top: 0; margin-bottom: 0; }
             .project-grid { grid-template-columns: 1fr; }
@@ -133,13 +141,15 @@
             .modal-content { padding: 24px; width: 95%; border-radius: 12px; }
             .close-btn { top: 16px; right: 16px; font-size: 24px; }
             .modal-title-row { align-items: flex-start; flex-direction: column; gap: 16px; }
-            .modal-title { font-size: 24px; }
+            /* [수정됨] 모바일 모달 제목 24px -> 20px */
+            .modal-title { font-size: 20px; }
             .outlink-btn { width: 100%; }
             .modal-detail-grid { grid-template-columns: 1fr; gap: 16px; padding: 16px; }
             .deliverable-placeholder { height: 250px; }
             
             footer { padding: 60px 5%; }
-            footer h2 { font-size: 26px; }
+            /* [수정됨] 모바일 푸터 텍스트 26px -> 22px */
+            footer h2 { font-size: 22px; }
             .footer-contact p { font-size: 16px; }
             
             #topBtn { bottom: 20px; right: 20px; width: 44px; height: 44px; font-size: 16px; }
@@ -164,7 +174,7 @@
         <section id="about" class="hero">
             <div class="hero-inner">
                 <div class="hero-text">
-                    <h1>문제의 본질을 파악하고<br>사용자 중심의 서비스를 기획합니다.</h1>
+                    <h1>꾸준하고 성실한 지원자 정성훈입니다.</h1>
                     <div class="profile-info">
                         <div class="info-item"><span class="info-label">이름</span> 정성훈</div>
                         <div class="info-item"><span class="info-label">출생</span> 1996년</div>
@@ -385,8 +395,6 @@
         projects.forEach(p => {
             const article = document.createElement('article');
             article.className = 'project-item';
-            
-            // 모달 오픈 함수 복원
             article.onclick = () => openModal(p.id);
             
             article.innerHTML = `
